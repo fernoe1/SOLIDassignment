@@ -1,4 +1,8 @@
 package org.example.services;
 
-public class OrderService {
+import org.example.services.interfaces.IOrderService;
+
+
+public class OrderService implements IOrderService {
+
 }

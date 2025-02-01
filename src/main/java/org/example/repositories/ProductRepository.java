@@ -1,4 +1,6 @@
 package org.example.repositories;
 
-public class ProductRepository {
+import org.example.repositories.interfaces.IProductRepository;
+
+public class ProductRepository implements IProductRepository {
 }

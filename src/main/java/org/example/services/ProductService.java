@@ -1,4 +1,6 @@
 package org.example.services;
 
-public class ProductService {
+import org.example.services.interfaces.IProductService;
+
+public class ProductService implements IProductService {
 }
