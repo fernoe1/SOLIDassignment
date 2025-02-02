@@ -1,5 +1,6 @@
 package org.example.services.interfaces;
 
-public interface IOrderService {
+import org.example.models.Order;
 
+public interface IOrderService {
 }

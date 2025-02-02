@@ -1,5 +1,7 @@
 package org.example.services.interfaces;
 
-public interface IOrderCalculator {
+import org.example.models.Order;
 
+public interface IOrderCalculator {
+    double calculateTotal(Order order);
 }

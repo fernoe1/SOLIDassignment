@@ -14,6 +14,24 @@ public class Database implements IDatabase {
     private static final String port = "1987";
     private static Connection connection;
 
+    private static Database instance;
+
+    public Database() {
+
+    }
+
+    public static Database getInstance() {
+        if (instance == null) {
+            synchronized (Database.class) {
+                if (instance == null) {
+                    instance = new Database();
+                }
+            }
+        }
+
+        return instance;
+    }
+
     @Override
     public Connection getConnection() {
         String connectionUrl = "jdbc:postgresql://" + host + ":" + port + "/" + dbName;

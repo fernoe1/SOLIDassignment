@@ -4,23 +4,23 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Order {
-    private Customer customer;
+    private User user;
     private List<Product> productList = new ArrayList<>();
 
     public Order() {
 
     }
 
-    public Order(Customer customer) {
-        setCustomer(customer);
+    public Order(User user) {
+        setCustomer(user);
     }
 
-    public void setCustomer(Customer customer) {
-        this.customer = customer;
+    public void setCustomer(User user) {
+        this.user = user;
     }
 
-    public Customer getCustomer() {
-        return customer;
+    public User getCustomer() {
+        return user;
     }
 
     public List<Product> getProductList() {
