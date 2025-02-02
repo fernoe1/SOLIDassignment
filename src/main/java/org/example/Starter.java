@@ -100,6 +100,7 @@ public class Starter {
     public void setRole(int user_id, int role_id) {
         userService.setRole(user_id, role_id);
     }
+
     public void viewAllUsers() {
         List<User> users = userService.getUsers();
         users.forEach(user -> System.out.println(user.getUser_id() + " : " + user.getName() + "\n" +
